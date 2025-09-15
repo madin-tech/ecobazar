@@ -1,0 +1,139 @@
+.hero-page{
+.page{
+    margin-top: 2.4rem;
+.mid{
+    @include row-align-cen(2.4rem);
+        .big {
+            position: relative;
+                width: 872px;
+                height: 520px;
+                border-radius: 10px;
+                
+                background-image: url("../../images/hero-img.jpg");
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: cover;
+                background-position: center left;
+              @include col-start(2.4rem);
+              padding: 15rem 0 0 6rem;
+                // &::after {
+                //         content: "";
+                //         position: absolute;
+                //         inset: 0;
+                //         background: linear-gradient(98.82deg,
+                //                 rgba(0, 0, 0, 0.6) 10.4%,
+                //                 rgba(0, 0, 0, 0) 59.43%);
+                //                 z-index: 0;
+                //     }
+            h1{
+            @include font(600, 4.8rem, 120%, $white);
+            // z-index: 2;
+            }
+            .sale{
+                // z-index: 2;
+                @include col(0.8rem);
+                padding-left: 1.2rem;
+
+                border-left:2px solid $border-color;
+              .in-sale{
+                @include row-align-cen(0.8rem);
+                h6{
+            @include font(500, 2rem, 150%, $white);
+                }
+                .orange{
+                    background-color: $orange;
+                    border-radius: 5px;
+                    padding: 0.4rem 1.2rem;
+                    h6{
+            @include font(600, 2rem, 150%, $white);
+                    }
+                }
+              }  
+              h6{
+        @include font(400, 1.4rem, 150%, $white);
+              }
+            } 
+            button{
+               @include button(1.6rem 4rem,$green,1.6rem);
+                @include row-align-cen(1.6rem);
+                @include font(600, 1.6rem, 120%, $green);
+            }   
+            }
+
+            .smalls {
+                @include col(2.4rem);
+        
+                .small1 {
+                    width: 423px;
+                    height: 250px;
+                    border-radius: 10px;
+                    background-image: url("../../images/small1-hero-img.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                 @include col-start(0.8rem);
+                 padding: 3.2rem 0 0 3.2rem;
+.first{
+    @include font(500, 1.4rem, 100%, $black-text);
+}
+.snd{
+    @include font(600, 3.2rem, 120%, $black-text);
+}
+  .thrd{
+@include font(400, 1.4rem, 150%, $gray);
+  }                         button {
+                                        @include button-transparent(1.6rem 0rem, $green, 1.6rem);
+                                        @include row-align-cen(1.6rem);
+                                        @include font(600, 1.6rem, 120%, $green);
+                                    }
+
+                }
+        
+                .small2 {
+                    width: 423px;
+                    height: 250px;
+                    border-radius: 10px;
+                    background-image: url("../../images/small2-hero-img.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+             @include col-cen(1.2rem);
+             
+                    h6{
+                @include font(500, 1.4rem, 100%, $white);
+                    }
+                    h3{
+                        @include font(600, 3.2rem, 120%, $white);
+                    }
+                                           button {
+                                            margin-top: 1rem;
+                                               @include button-transparent(1.6rem 0rem, $green, 1.6rem);
+                                               @include row-align-cen(1.6rem);
+                                               @include font(600, 1.6rem, 120%, $green);
+                                           }
+                }
+            }
+}
+.white{
+ padding: 4rem;
+ @include space-between();
+box-shadow: 0px 8px 40px 0px #00260314;
+margin-top: 2.4rem;
+border-radius: 8px;
+.box{
+    @include row-align-cen(1.6rem);
+    .texts {
+            @include col(0.8rem);
+    
+            .black {
+                @include font(600, 1.6rem, 120%, $black-text);
+            }
+    
+            .grey {
+                @include font(400, 1.4rem, 150%, $black-header-color);
+            }
+        }
+}
+}
+}
+}

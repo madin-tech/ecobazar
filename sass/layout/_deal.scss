@@ -1,0 +1,77 @@
+.deal{
+            .top {
+                    @include space-between();
+                 margin-bottom: 3.2rem;
+                    h2 {
+                        @include font(600, 3.2rem, 120%, $black-text);
+                    }
+            
+                    button {
+                        @include button(1.6rem 0rem, $green, 1.6rem);
+                        @include row-align-cen(1.6rem);
+                        @include font(500, 1.6rem, 150%, $green);
+                    }
+          .box{
+            position: relative;
+.sale{
+    position: absolute;
+        top: 16px;
+        left: 16px;
+        @include row-align-cen(0.8rem);
+                                        .red {
+                                                padding: 0.3rem 0.8rem;
+                                                background-color: $red;
+                                                width: 80px;
+                                                height: 27px;
+                                                border-radius: 4px;
+                                              
+                                        
+                                                h6 {
+                                                    @include font(500, 1.4rem, 150%, $white);
+                                                }
+                                            }
+                                                                                 .blue{
+                                                                                     padding: 0.3rem 0.8rem;
+                                                                                     background-color: $blue;
+                                                                                     width: 82px;
+                                                                                     height: 27px;
+                                                                                     border-radius: 4px;
+                                        
+                                        
+                                                                                     h6 {
+                                                                                         @include font(500, 1.4rem, 150%, $white);
+                                                                                     }
+                                                                                 }
+}
+            .olma{
+                 position: relative;
+                    width: 525px;
+                    height: 446px;
+             background-image: url("../../images/big-olma.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                   
+                .add{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include row-align-cen(0.8rem);
+                    button{
+        @include button-green(1.4rem 13rem, $white, 1.6rem);
+                    }
+                                                                                .circle {
+                                                                                    width: 40px;
+                                                                                    height: 40px;
+                                                                                    border-radius: 50%;
+                                                                                   
+                                                                                    background-color: $bag-bg;
+                                                                                    display: flex;
+                                                                                    align-items: center;
+                                                                                    justify-content: center;
+                                                                                }
+                }
+            }
+          }          
+                }
+}

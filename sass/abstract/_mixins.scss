@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin font($weight, $font, $height, $color) {
+    font-weight: $weight;
+    font-size: $font;
+    line-height: $height;
+    color: $color;
+font-family: "Poppins", sans-serif;
+}
+
+@mixin button($pad, $color, $font) {
+    border-radius: 24px;
+    padding: $pad;
+    color: $color;
+    background-color: $white;
+    border: none;
+}
+
+@mixin button-white($pad, $color, $font) {
+    border-radius: 24px;
+    padding: $pad;
+    color: $color;
+    background-color: $white;
+    border: none;
+}
+@mixin button-green($pad, $color, $font) {
+    border-radius: 24px;
+    padding: $pad;
+    color: $color;
+    background-color: $green;
+    border: none;
+}
+
+@mixin button-transparent($pad, $color, $font) {
+    border-radius: 10px;
+    padding: $pad;
+    color: $color;
+    background-color: transparent;
+    border: none;
+}
+
+@mixin row-align-cen($gap) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+    align-items: center;
+}
+
+@mixin row-cen($gap) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin row($gap) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+
+}
+
+@mixin space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin space-between-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin space-between-cen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin col-start($gap) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: $gap;
+}
+
+@mixin col-end($gap) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: $gap;
+}
+
+@mixin col-cen($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin col($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+
+}
+
+@mixin row-end($gap) {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: $gap;
+      justify-content: center;
+}
