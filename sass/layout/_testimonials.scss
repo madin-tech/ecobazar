@@ -1,0 +1,66 @@
+.testimonials{
+    background-color:$bag-bg;
+    padding-bottom: 6rem;
+    &-mid{
+        &-top {
+            padding-bottom: 3.5rem;
+            padding-top: 6rem;
+            @include space-between();
+            h2{
+@include font(600, 3.2rem, 120%, $black-text);
+            }
+            &-circles{
+                @include row-align-cen(1.2rem);
+                &-circle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 45px;
+                    background-color: $white;
+                    &:hover{
+                        transition: 0.8s ease;
+                        background-color: $green;
+                        svg path{
+                     stroke: $white;
+                        }
+
+                    }
+                }
+            }
+        }
+        .boxes{
+            @include space-between();
+            .box{
+                box-shadow: 0px 10px 20px 0px #00000003;
+                border-radius: 8px;
+                padding: 2.4rem;
+                background-color: $white;
+                @include col-start(1.6rem);
+                h5{
+            @include font(400, 1.4rem, 150%, $text);
+                }
+                &-bottom{
+                    @include row(10rem);
+                  
+                   &-left{
+                    @include row-align-cen(1.2rem);
+                    &-text{
+           @include col(0rem);
+                     &-black{
+@include font(500, 1.6rem, 150%, $black-text);
+                     }  
+                     &-grey{
+@include font(400, 1.4rem, 150%, $black-header-color);
+                     } 
+                    }
+                   } 
+                   .stars{
+                @include row-align-cen(0.1rem);
+                   }
+                }
+            }
+        }
+    }
+}

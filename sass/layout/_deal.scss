@@ -1,391 +1,415 @@
-.deal{
-                    .top {
-                            @include space-between();
-                            margin-bottom: 3.2rem;
-                    
-                            h2 {
-                                @include font(600, 3.2rem, 120%, $black-text);
-                            }
-                    
-                            button {
-                                @include button(1.6rem 0rem, $green, 1.6rem);
-                                @include row-align-cen(1.6rem);
-                                @include font(500, 1.6rem, 150%, $green);
-                            }
-                        }
-.mid{
-   display: flex;
-   flex-direction: column;
-   gap: 0;
-.top{
-        @include row(0);
-        .box {
-                position: relative;
-                border: 1px solid $light-gray;
+.deal-page{
+    
+    background-color: $bg;
+    .deal {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    
+            .top {
+                @include space-between();
+                margin-bottom: 3.2rem;
+    
+                h2 {
+                    @include font(600, 3.2rem, 120%, $black-text);
+                }
+    
+                button {
+                    @include button-transparent(1.6rem 0rem, $green, 1.6rem);
+                    @include row-align-cen(1.6rem);
+                    @include font(500, 1.6rem, 150%, $green);
+                }
+            }
+    
+            .mid {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                padding-left: 2rem;
-                padding-top: 1rem;
-        
-                &:hover {
-                    border: 1px solid $dark-green;
-                    box-shadow: 0px 0px 12px 0px #20B52652;
-                    transition: 0.5s ease;
-        
-                    .chinese {
-                        color: $dark-green;
-                        transition: 0.8s ease;
-                    }
-        
-                    // .box-bottom .bag {
-                    //     background-color: $dark-green;
-                    //     transition: 0.8s ease;
-                    // }
-        
-                    // .box-bottom .bag svg path {
-                    //     stroke: $white;
-                    //     transition: 0.8s ease;
-                    // }
-        
-                    transition: 0.8s ease;
-                }
-        
-                .sale {
-                    position: absolute;
-                    top: 16px;
-                    left: 16px;
-                    @include row-align-cen(0.8rem);
-        
-                    .red {
-                        padding: 0.3rem 0.8rem;
-                        background-color: $red;
-                        width: 80px;
-                        height: 27px;
-                        border-radius: 4px;
-        
-        
-                        h6 {
-                            @include font(500, 1.4rem, 150%, $white);
+                gap: 0;
+    
+                .mid-top {
+                    @include row(0);
+    
+                    .box {
+                        background-color: $white;
+                        position: relative;
+                        border: 1px solid $light-gray;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-left: 2rem;
+                        padding-top: 1rem;
+    
+                        &:hover {
+                            border: 1px solid $dark-green;
+                            box-shadow: 0px 0px 12px 0px #20B52652;
+                            transition: 0.5s ease;
+    
+                            .chinese {
+                                color: $dark-green;
+                                transition: 0.8s ease;
+                            }
+    
+                            // .box-bottom .bag {
+                            //     background-color: $dark-green;
+                            //     transition: 0.8s ease;
+                            // }
+    
+                            // .box-bottom .bag svg path {
+                            //     stroke: $white;
+                            //     transition: 0.8s ease;
+                            // }
+    
+                            transition: 0.8s ease;
                         }
-                    }
-        
-                    .blue {
-                        padding: 0.3rem 0.8rem;
-                        background-color: $blue;
-                        width: 82px;
-                        height: 27px;
-                        border-radius: 4px;
-        
-        
-                        h6 {
-                            @include font(500, 1.4rem, 150%, $white);
-                        }
-                    }
-                }
-        
-                .olma {
-                    position: relative;
-                    width: 458px;
-                    height: 446px;
-                    background-image: url("../../images/big-olma.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-        
-                    .add {
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        @include row-align-cen(0.8rem);
-        
-                        button {
-        
-                            @include button-green(1.4rem 9rem, $white, 1.6rem);
-                        }
-        
-                        .circle {
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-        
-                            background-color: $bag-bg;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                    }
-                }
-        
-                .olma-bottom {
-                    @include col-cen(0.8rem);
-                    margin-top: 2.5rem;
-        
-                    p {
-                        @include font(500, 1.4rem, 150%, $text);
-                    }
-        
-                    .costs {
-                        @include row-align-cen(0.4rem);
-        
-                        .black {
-                            @include font(500, 2.4rem, 150%, $black-text);
-                        }
-        
-                        .grey {
-                            text-decoration: line-through;
-                            @include font(400, 2.4rem, 150%, $black-header-color);
-                        }
-                    }
-        
-                    .total {
-                        margin-bottom: 1rem;
-                        @include row-align-cen(0.2rem);
-        
-                        p {
-                            @include font(400, 1.2rem, 130%, $search-placeholder);
-                        }
-                    }
-        
-                    .last {
-                        @include col-cen(0.6rem);
-                        margin-bottom: 1.8rem;
-        
-                        .hurry {
-                            @include font(400, 1.4rem, 1.8rem, $black-header-color);
-                        }
-        
-                        .watch {
-                            @include row-align-cen(1.4rem);
-        
-                            .soat {
-                                @include col(0.3rem);
-        
-                                h5 {
-                                    @include font(500, 1.8rem, 150%, $black-text);
-                                }
-        
+    
+                        .sale {
+                            position: absolute;
+                            top: 16px;
+                            left: 16px;
+                            @include row-align-cen(0.8rem);
+    
+                            .red {
+                                padding: 0.3rem 0.8rem;
+                                background-color: $red;
+                                width: 80px;
+                                height: 27px;
+                                border-radius: 4px;
+    
+    
                                 h6 {
-                                    @include font(500, 1rem, 100%, $black-header-color);
+                                    @include font(500, 1.4rem, 150%, $white);
                                 }
                             }
+    
+                            .blue {
+                                padding: 0.3rem 0.8rem;
+                                background-color: $blue;
+                                width: 82px;
+                                height: 27px;
+                                border-radius: 4px;
+    
+    
+                                h6 {
+                                    @include font(500, 1.4rem, 150%, $white);
+                                }
+                            }
+                        }
+    
+                        .olma {
+                            position: relative;
+                            width: 450px;
+                            height: 446px;
+                            background-image: url("../../images/big-olma.png");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+    
+                            .add {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                display: flex;
+                                flex-direction: row;
+                                gap: 0.8rem;
+                                align-items: center;
+                                justify-content: center;
+                                margin-left: 2.5rem;
+    
+                                button {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 0.8rem;
+                                    align-items: center;
+                                    justify-content: center;
+                                    @include button-green(1.4rem 9rem, $white, 1.6rem);
+                                }
+    
+                                .circle {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+    
+                                    background-color: $bag-bg;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+    
+                        .olma-bottom {
+                            @include col-cen(0.8rem);
+                            margin-top: 2.5rem;
+    
+                            p {
+                                @include font(500, 1.4rem, 150%, $text);
+                            }
+    
+                            .costs {
+                                @include row-align-cen(0.4rem);
+    
+                                .black {
+                                    @include font(500, 2.4rem, 150%, $black-text);
+                                }
+    
+                                .grey {
+                                    text-decoration: line-through;
+                                    @include font(400, 2.4rem, 150%, $black-header-color);
+                                }
+                            }
+    
+                            .total {
+                                margin-bottom: 1rem;
+                                @include row-align-cen(0.2rem);
+    
+                                p {
+                                    @include font(400, 1.2rem, 130%, $search-placeholder);
+                                }
+                            }
+    
+                            .last {
+                                @include col-cen(0.6rem);
+                                margin-bottom: 1.8rem;
+    
+                                .hurry {
+                                    @include font(400, 1.4rem, 1.8rem, $black-header-color);
+                                }
+    
+                                .watch {
+                                    @include row-align-cen(1.4rem);
+    
+                                    .soat {
+                                        @include col(0.3rem);
+    
+                                        h5 {
+                                            @include font(500, 1.8rem, 150%, $black-text);
+                                        }
+    
+                                        h6 {
+                                            @include font(500, 1rem, 100%, $black-header-color);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .bottom {
+                    @include row(0);
+    
+                    .box {
+                        background-color: $white;
+                        border: 1px solid $light-gray;
+                        position: relative;
+    
+                        &:hover {
+                            border: 1px solid $dark-green;
+                            box-shadow: 0px 0px 12px 0px #20B52652;
+                            transition: 0.5s ease;
+    
+                            .box-bottom .left p {
+                                color: $dark-green;
+                                transition: 0.8s ease;
+                            }
+    
+                            .box-bottom .bag {
+                                background-color: $dark-green;
+                                transition: 0.8s ease;
+                            }
+    
+                            .box-bottom .bag svg path {
+                                stroke: $white;
+                                transition: 0.8s ease;
+                            }
+    
+                            transition: 0.8s ease;
+                        }
+    
+                        img {
+                            margin: 0.5rem;
+                        }
+    
+                        .red {
+                            padding: 0.3rem 0.8rem;
+                            background-color: $red;
+                            width: 70px;
+                            height: 27px;
+                            border-radius: 4px;
+                            position: absolute;
+                            top: 16px;
+                            left: 16px;
+    
+                            h6 {
+                                @include font(400, 1.4rem, 150%, $white);
+                            }
+                        }
+    
+                        .circles {
+                            position: absolute;
+                            top: 16px;
+                            right: 16px;
+                            @include col(0.6rem);
+    
+                            .circle {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: 1px solid $bag-bg;
+                                background-color: $white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+    
+                        .box-bottom {
+                            @include space-between-cen();
+                            padding: 1.2rem;
+    
+                            .left {
+                                @include col(0);
+    
+                                p {
+                                    @include font(400, 1.4rem, 150%, $text);
+                                }
+    
+                                .cost {
+                                    @include row-align-cen(0.2rem);
+    
+                                    .black {
+                                        @include font(500, 1.6rem, 150%, $black-text);
+                                    }
+    
+                                    .grey {
+                                        @include font(400, 1.6rem, 150%, $black-header-color);
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+    
+                            .bag {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%;
+                                background-color: $bag-bg;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                            }
+    
                         }
                     }
                 }
             }
-}
-                
-.bottom{
-    @include row(0);
+    
+            .options {
+                .options-top {
+                    @include row(0);
+    
                     .box {
-                            border: 1px solid $light-gray;
-                            position: relative;
-                    
-                            &:hover {
-                                border: 1px solid $dark-green;
-                                box-shadow: 0px 0px 12px 0px #20B52652;
-                                transition: 0.5s ease;
-                    
-                                .box-bottom .left p {
-                                    color: $dark-green;
-                                    transition: 0.8s ease;
-                                }
-                    
-                                .box-bottom .bag {
-                                    background-color: $dark-green;
-                                    transition: 0.8s ease;
-                                }
-                    
-                                .box-bottom .bag svg path {
-                                    stroke: $white;
-                                    transition: 0.8s ease;
-                                }
-                    
+                        border: 1px solid $light-gray;
+                        position: relative;
+    
+                        &:hover {
+                            border: 1px solid $dark-green;
+                            box-shadow: 0px 0px 12px 0px #20B52652;
+                            transition: 0.5s ease;
+    
+                            .box-bottom .left p {
+                                color: $dark-green;
                                 transition: 0.8s ease;
                             }
-                    
-                            img {
-                                margin: 0.5rem;
+    
+                            .box-bottom .bag {
+                                background-color: $dark-green;
+                                transition: 0.8s ease;
                             }
-                    
-                            .red {
-                                padding: 0.3rem 0.8rem;
-                                background-color: $red;
-                                width: 70px;
-                                height: 27px;
-                                border-radius: 4px;
-                                position: absolute;
-                                top: 16px;
-                                left: 16px;
-                    
-                                h6 {
-                                    @include font(400, 1.4rem, 150%, $white);
-                                }
+    
+                            .box-bottom .bag svg path {
+                                stroke: $white;
+                                transition: 0.8s ease;
                             }
-                    
-                            .circles {
-                                position: absolute;
-                                top: 16px;
-                                right: 16px;
-                                @include col(0.6rem);
-                    
-                                .circle {
-                                    width: 40px;
-                                    height: 40px;
-                                    border-radius: 50%;
-                                    border: 1px solid $bag-bg;
-                                    background-color: $white;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                            }
-                    
-                            .box-bottom {
-                                @include space-between-cen();
-                                padding: 1.2rem;
-                    
-                                .left {
-                                    @include col(0);
-                    
-                                    p {
-                                        @include font(400, 1.4rem, 150%, $text);
-                                    }
-                    
-                                    .cost {
-                                        @include row-align-cen(0.2rem);
-                    
-                                        .black {
-                                            @include font(500, 1.6rem, 150%, $black-text);
-                                        }
-                    
-                                        .grey {
-                                            @include font(400, 1.6rem, 150%, $black-header-color);
-                                            text-decoration: line-through;
-                                        }
-                                    }
-                                }
-                    
-                                .bag {
-                                    height: 40px;
-                                    width: 40px;
-                                    border-radius: 50%;
-                                    background-color: $bag-bg;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                    
-                                }
-                    
+    
+                            transition: 0.8s ease;
+                        }
+    
+                        img {
+                            margin: 0.5rem;
+                        }
+    
+                        .red {
+                            padding: 0.3rem 0.8rem;
+                            background-color: $red;
+                            width: 70px;
+                            height: 27px;
+                            border-radius: 4px;
+                            position: absolute;
+                            top: 16px;
+                            left: 16px;
+    
+                            h6 {
+                                @include font(400, 1.4rem, 150%, $white);
                             }
                         }
-}
+    
+                        .circles {
+                            position: absolute;
+                            top: 16px;
+                            right: 16px;
+                            @include col(0.6rem);
+    
+                            .circle {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: 1px solid $bag-bg;
+                                background-color: $white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+    
+                        .box-bottom {
+                            @include space-between-cen();
+                            padding: 1.2rem;
+    
+                            .left {
+                                @include col(0);
+    
+                                p {
+                                    @include font(400, 1.4rem, 150%, $text);
+                                }
+    
+                                .cost {
+                                    @include row-align-cen(0.2rem);
+    
+                                    .black {
+                                        @include font(500, 1.6rem, 150%, $black-text);
+                                    }
+    
+                                    .grey {
+                                        @include font(400, 1.6rem, 150%, $black-header-color);
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+    
+                            .bag {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%;
+                                background-color: $bag-bg;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                            }
+    
+                        }
                     }
-                                                .options {
-                                                    .options-top {
-                                                        @include row(0);
-                    .box {
-                            border: 1px solid $light-gray;
-                            position: relative;
-                    
-                            &:hover {
-                                border: 1px solid $dark-green;
-                                box-shadow: 0px 0px 12px 0px #20B52652;
-                                transition: 0.5s ease;
-                    
-                                .box-bottom .left p {
-                                    color: $dark-green;
-                                    transition: 0.8s ease;
-                                }
-                    
-                                .box-bottom .bag {
-                                    background-color: $dark-green;
-                                    transition: 0.8s ease;
-                                }
-                    
-                                .box-bottom .bag svg path {
-                                    stroke: $white;
-                                    transition: 0.8s ease;
-                                }
-                    
-                                transition: 0.8s ease;
-                            }
-                    
-                            img {
-                                margin: 0.5rem;
-                            }
-                    
-                            .red {
-                                padding: 0.3rem 0.8rem;
-                                background-color: $red;
-                                width: 70px;
-                                height: 27px;
-                                border-radius: 4px;
-                                position: absolute;
-                                top: 16px;
-                                left: 16px;
-                    
-                                h6 {
-                                    @include font(400, 1.4rem, 150%, $white);
-                                }
-                            }
-                    
-                            .circles {
-                                position: absolute;
-                                top: 16px;
-                                right: 16px;
-                                @include col(0.6rem);
-                    
-                                .circle {
-                                    width: 40px;
-                                    height: 40px;
-                                    border-radius: 50%;
-                                    border: 1px solid $bag-bg;
-                                    background-color: $white;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                            }
-                    
-                            .box-bottom {
-                                @include space-between-cen();
-                                padding: 1.2rem;
-                    
-                                .left {
-                                    @include col(0);
-                    
-                                    p {
-                                        @include font(400, 1.4rem, 150%, $text);
-                                    }
-                    
-                                    .cost {
-                                        @include row-align-cen(0.2rem);
-                    
-                                        .black {
-                                            @include font(500, 1.6rem, 150%, $black-text);
-                                        }
-                    
-                                        .grey {
-                                            @include font(400, 1.6rem, 150%, $black-header-color);
-                                            text-decoration: line-through;
-                                        }
-                                    }
-                                }
-                    
-                                .bag {
-                                    height: 40px;
-                                    width: 40px;
-                                    border-radius: 50%;
-                                    background-color: $bag-bg;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                    
-                                }
-                    
-                            }
-                        }
-                                                    }
-                                                }
+                }
+            }
+        }
 }

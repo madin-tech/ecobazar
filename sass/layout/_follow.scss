@@ -1,0 +1,28 @@
+.follow{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .logos{
+        @include space-between();
+        svg:hover{
+           
+         path{
+            fill: $green;
+            transition: 0.8s ease;
+        }
+        }
+    }
+    .insta{
+        margin-top: 6rem;
+        @include col(3.2rem);
+        h2{
+            display: flex;
+            justify-content: center;
+            @include font(600, 3.2rem, 120%, $black-text);
+        }
+       &-mid{
+       
+@include space-between();
+padding-bottom: 6rem;
+       } 
+    }
+}

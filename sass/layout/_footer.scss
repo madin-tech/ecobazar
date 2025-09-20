@@ -1,0 +1,121 @@
+.footer{
+    .gray{
+        background-color: $bg;
+        &-mid{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            @include row-align-cen(7.5rem);
+            &-left{
+                @include col(0.4rem);
+                h5{
+                @include font(600, 2.4rem, 150%, $black-text);
+                }
+         h6{
+            @include font(400, 1.4rem, 150%, $black-header-color);
+         }       
+            }
+&-right{
+    @include row(4rem);
+                &-middle {
+                    padding: 0;
+                        background-color: $white;
+                        border: 1px solid $grey-e5;
+                        border-radius: 46px;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        align-items: center;
+                        input {
+                            outline: none;
+                            padding: 1.4rem 25rem 1.4rem 2.4rem;
+                            background-color: transparent;
+                            border: none;
+                        }
+                
+                        button {
+                            border-radius: 43px;
+                            padding: 1.6rem 4rem;
+                            border: none;
+                            background-color: $green;
+                            @include font(600, 1.6rem, 20px, $white);
+                        }
+                    }
+         &-last{
+            @include row(0.8rem);
+       &-box{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        &:hover{
+            background-color: $green;
+            svg path{
+                fill: $white;
+                transition: 0.5s ease;
+            }
+        }
+       }     
+         }           
+}
+        }
+    }
+    .black{
+        padding-top: 6rem;
+        background-color: $black-text;
+        // padding-bottom: 6rem;
+        &-mid{
+            @include space-between();
+            &-left{
+                @include col-start(1.6rem);
+               h6{
+                @include font(400, 1.4rem, 150%, $search-placeholder);
+               } 
+       .contact{
+        @include row-align-cen(1.6rem);
+        a{
+        @include font(500, 1.4rem, 150%, $white);
+        padding: 0.6rem;
+        border-bottom: 2px solid $green;
+        text-decoration: none;
+        }
+       }
+            }
+
+            nav{
+                ul{
+
+                    li{
+                        list-style-type: none;
+                        @include font(400, 1.4rem, 150%, $black-header-color);
+                        &:hover{
+                            color: $white;
+                            cursor: pointer;
+                            transition: 0.5s ease;
+                        }
+                    }
+                    .head{
+                    @include font(500, 1.6rem, 150%, $white);
+                    }
+                }
+            }
+            .last-nav{
+                margin-right: 6rem;
+            }
+        }
+        .footer-bottom{
+            margin-top: 6rem;
+            padding: 2.9rem 0 2.9rem 0;
+            @include space-between();
+            &-left{
+                p{
+                @include font(400, 1.4rem, 150%, $search-placeholder);
+                }
+            }
+            .pay{
+                @include row-align-cen(0.8rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.news{
+    &-mid{
+        @include space-between();
+        margin-bottom: 6rem;
+        &-box{
+            border-radius: 8px;
+            @include col(0);
+            &:hover{
+                box-shadow: 0px 20px 50px 0px #00000014;
+                transition: 0.8s ease;
+                .news-mid-box-bottom{
+                    border: none;
+                }
+            }
+            img{
+                width: 424px;
+                height: 324px;
+            }
+          &-bottom{
+            border-right: 1px solid $grey-e5;
+            border-bottom: 1px solid $grey-e5;
+            border-left: 1px solid $grey-e5;
+            padding: 2.4rem;
+            border-radius: 8px;
+            @include col-start(0.8rem);
+            .info{
+                @include row(1.6rem);
+                &-box{
+                    @include row(0.4rem);
+               p{
+                @include font(400, 1.4rem, 150%, $text);
+               }     
+                }
+                
+            }
+            h5{
+@include font(500, 1.8rem, 150%, $dark-green);
+            }
+                                button {
+                                    margin-top: 1.2rem;
+                                    @include button(0rem 0rem, $green, 1.6rem);
+                                    @include row-align-cen(1.6rem);
+                                    @include font(500, 1.6rem, 150%, $green);
+                                }
+          }  
+        }
+    }
+}
