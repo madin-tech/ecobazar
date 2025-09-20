@@ -1,0 +1,203 @@
+.header {
+
+    // @include font(400, 1rem, 1.6rem, $white);
+    .top {
+        border-bottom: 2px solid $light-gray;
+
+        .mid {
+            padding: 1.3rem 0 1.3rem 0;
+            @include space-between();
+
+            .location {
+                @include row-align-cen(0.8rem);
+
+                h6 {
+                    @include font(400, 1.2rem, 130%, $gray);
+                }
+            }
+
+            .right {
+                @include row-align-cen(0.5rem);
+
+                .language {
+
+                    @include row-align-cen(0.6rem);
+
+                    h6 {
+                        @include font(400, 1.2rem, 130%, $gray);
+                    }
+
+                    padding-right: 2rem;
+
+                }
+
+                .border {
+                    border-right: 2px solid $light-gray;
+                }
+
+                .buttons {
+                    @include row-align-cen(0.5rem);
+
+                    button {
+                        @include font(400, 1.2rem, 130%, $gray);
+                        background-color: transparent;
+                        border: none;
+                    }
+
+                    .pad {
+                        padding-left: 2rem;
+                    }
+
+                    h6 {
+                        @include font(400, 1.2rem, 130%, $gray);
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        @include space-between();
+        padding: 2.4rem 0 2.4rem 0;
+
+        .search {
+
+            // @include row-align-cen(0);
+            display: flex;
+            align-items: center;
+
+            .search-left {
+                border-top: 1px solid $light-gray;
+                border-bottom: 1px solid $light-gray;
+                border-left: 1px solid $light-gray;
+                border-radius: 6px 0 0 6px;
+                @include row-align-cen(0);
+                padding-right: 10rem;
+
+                img {
+                    margin: 1.2rem 0.8rem 1.2rem 1.6rem;
+                }
+
+                input {
+                    border: none;
+                    padding: 1.2rem 0 1.2rem 0rem;
+                    outline: none;
+                    @include font(400, 1.5rem, 2.1rem, $search-placeholder);
+                }
+            }
+
+            button {
+                padding: 14.8px 24px;
+                background-color: $green;
+                border: none;
+                @include font(600, 1.4rem, 120%, $white);
+                border-radius: 0 6px 6px 0;
+            }
+        }
+
+        .bottom-right {
+            @include row-align-cen(0rem);
+
+            .icon {
+                padding-right: 1.6rem;
+                border-right: 2px solid $light-gray;
+            }
+
+            .shopping {
+                @include row-align-cen(1.2rem);
+
+                .bag {
+                    position: relative;
+                    padding-left: 1.6rem;
+
+                    .green {
+                        position: absolute;
+                        top: -5px;
+                        right: -5px;
+                        height: 18px;
+                        width: 18px;
+                        background-color: $dark-green;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            @include font(500, 1rem, 1rem, $white);
+                        }
+                    }
+                }
+
+                .cart {
+                    @include col(0.7rem);
+
+                    h6 {
+                        @include font(400, 1.1rem, 120%, $text);
+                    }
+
+                    h5 {
+                        @include font(500, 1.4rem, 100%, $black-text);
+                    }
+                }
+            }
+        }
+    }
+
+    .black {
+        background-color: $header-bg;
+        padding: 1.9rem 0 1.9rem 0;
+
+        &.detail {
+            background-color: $white;
+        }
+
+        .mid {
+            @include space-between-align();
+
+            .left {
+                nav {
+
+                    ul {
+                        @include row-align-cen(3.2rem);
+
+                        li {
+
+                            @include row-align-cen(0.5rem);
+
+                            &:hover {
+                                a {
+                                    color: $white;
+
+                                }
+
+                                svg path {
+                                    stroke: $white;
+                                }
+                            }
+
+                            a {
+                                @include font(500, 1.4rem, 150%, $black-header-color);
+                                text-decoration: none;
+                            }
+
+                            svg {
+                                margin-top: 0.2rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                @include row-align-cen(1rem);
+
+                a {
+                    @include font(500, 1.4rem, 150%, $white);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
