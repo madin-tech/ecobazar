@@ -1,0 +1,259 @@
+.detail-home{
+    &-middle{
+@include space-between();
+margin-top: 3.2rem;
+      &-left{
+        @include row-align-cen(1.2rem);
+        .little-boxes{
+            position: relative;
+            @include col(1.2rem);
+            .up{
+                position: absolute;
+                top: -56px;
+                left: 28px;
+                height: 24px;
+                width: 24px;
+            }
+                                                .down {
+                                                                    position: absolute;
+                                                                        bottom: -56px;
+                                                                        left: 28px;
+                                                    height: 24px;
+                                                    width: 24px;
+                                                }
+            .little1{
+                                width: 80px;
+                                    height: 90px;
+                                    border-radius: 10px;
+                                    background-image: url("../../images/little-img1.jpg");
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                    &:hover{
+                                        border: 1px solid $green;
+                                    
+                                        transition: 0.8s ease;
+                                    }
+            }
+                                                .little2 {
+                                                    width: 80px;
+                                                    height: 90px;
+                                                    border-radius: 10px;
+                                                    background-image: url("../../images/little-img2jpg.png");
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    background-size: cover;
+                        
+                                                    &:hover {
+                                                        border: 1px solid $green;
+                        
+                                                        transition: 0.8s ease;
+                                                    }
+                                                }
+                         .little3 {
+                             width: 80px;
+                             height: 90px;
+                             border-radius: 10px;
+                             background-image: url("../../images/little-img3.png");
+                             background-repeat: no-repeat;
+                             background-position: center;
+                             background-size: cover;
+            
+                             &:hover {
+                                 border: 1px solid $green;
+            
+                                 transition: 0.8s ease;
+                             }
+                         }
+
+                                                         .little4 {
+                                                             width: 80px;
+                                                             height: 90px;
+                                                             border-radius: 10px;
+                                                             background-image: url("../../images/little-img4.jpg");
+                                                             background-repeat: no-repeat;
+                                                             background-position: center;
+                                                             background-size: cover;
+                            
+                                                             &:hover {
+                                                                 border: 1px solid $green;
+                            
+                                                                 transition: 0.8s ease;
+                                                             }
+                                                         }
+        }
+        .big-box{
+                                                            width: 556px;
+                                                                height: 556px;
+                                                                border-radius: 10px;
+                                                                background-image: url("../../images/big-img.png");
+                                                                background-repeat: no-repeat;
+                                                                background-position: center;
+                                                                background-size: cover;
+        }
+      }  
+      &-right{
+        &-top{
+            @include col(1.2rem);
+            border-bottom: 1px solid $grey-e5;
+            margin-bottom: 2.4rem;
+            &-head{
+              @include row(0.8rem);
+                h2{
+                @include font(600, 3.6rem, 120%, $black-text);
+                }
+                .stock{
+                    padding: 0.4rem 0.8rem;
+                    background-color: $light-green;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    h4{
+                @include font(400, 1.4rem, 150%, $dark-green);
+                    }
+                }
+            }
+            &-review{
+                @include row-align-cen(0.2rem);
+                .rev{
+                @include font(400, 1.4rem, 150%, $gray);
+                margin-right: 1.2rem;
+                }
+                .sku{
+                    margin-left: 1.2rem;
+            @include font(500, 1.4rem, 150%, $header-bg);
+            span{
+            @include font(500, 1.4rem, 150%, $gray);
+            }
+                }
+            }
+            .cost{
+                margin-top: 0.8rem;
+                margin-bottom: 2rem;
+                @include row-align-cen(0.2rem);
+                &-grey{
+                    text-decoration: line-through;
+    @include font(400, 2rem, 150%, $new-grey);
+                }
+                &-green{
+                    @include font(500, 2.4rem, 150%, $dark-green);
+
+                }
+                                         .skidka {
+                                            margin-left: 1.2rem;
+                                            background-color: $light-red;
+                                            border-radius: 30px;
+                                            padding: 0.3rem 1rem;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                             .num {
+                                                @include font(500, 1.4rem, 150%, $red);
+                                             }
+                                         }
+            }
+        }
+        &-brand{
+        border-bottom: 1px solid $grey-e5;
+           @include col(1.6rem);
+           p{
+@include font(400, 1.4rem, 150%, $search-placeholder);
+margin-bottom: 2.4rem;
+           }
+.brand-top{
+    @include row-align-cen(27rem);
+                .brand-part {
+                        @include row-align-cen(0.8rem);
+                
+                        h6 {
+                            @include font(400, 1.4rem, 150%, $black-text);
+                        }
+                    }
+                
+                    .right-side {
+                        @include row-align-cen(0.5rem);
+                
+                        h6 {
+                            @include font(400, 1.4rem, 150%, $black-text);
+                        }
+                
+                        .green-box {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                
+                            &:hover {
+                                background-color: $green;
+                                transition: 0.8s ease;
+                
+                                svg path {
+                                    fill: $white;
+                                }
+                            }
+                        }
+                    }
+}  
+        }
+        .add-cart{
+          @include row-align-cen(1.2rem);
+          margin-top: 1.8rem;
+          padding-bottom: 1.8rem;
+        border-bottom: 1px solid $grey-e5;
+            .add{
+                padding: 0.8rem;
+                border-radius: 170px;
+                border: 1px solid $grey-e5;
+                @include row-align-cen(1rem);
+                h4{
+                @include font(400, 1.6rem, 150%, $black-text);
+                }
+              .count-circle{
+                padding: 1rem;
+                background-color: $grey-f2;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }  
+            }
+            button{
+                @include row-align-cen(1.6rem);
+                padding: 1.6rem 16rem;
+                background-color: $green;
+                border: none;
+                @include font(600, 1.6rem, 120%, $white);
+                border-radius: 43px;
+            }
+            .like{
+             background-color: $light-green; 
+                            border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 1rem;
+            }
+        }
+        .product-info{
+            @include col(1.2rem);
+            margin-top: (2.4rem);
+            &-detail{
+                @include row-align-cen(0.6rem);
+        &-black{
+@include font(500, 1.4rem, 150%, $black-text);
+        }   
+        &-grey{
+@include font(500, 1.4rem, 150%, $search-placeholder);
+span{
+@include font(500, 1.4rem, 150%, $black-text);
+text-decoration: underline;
+}
+        }     
+            }
+        }
+      }
+    }
+}

@@ -1,12 +1,25 @@
 .detail-top{
     background-image: url("../../images/detail-img.jpg");
                     background-repeat: no-repeat;
-                        background-position: center;
+                        background-position: bottom;
                         background-size: cover;
                         height: 120px;
                         width: full;
+                        padding: 4.8rem;
                        
     .detail-top-box{
-   
+        @include row-align-cen(1.2rem);
+   a{
+    text-decoration: none;
+    @include font(400, 1.6rem, 150%, $black-header-color);
+    &:hover{
+        color: $green;
+    }
+   }
+   svg:hover{
+    path{
+    stroke: $green;
+    }
+   }
     }
 }
