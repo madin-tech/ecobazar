@@ -3680,4 +3680,208 @@ body {
 .detail-top .detail-top-box svg:hover path {
   stroke: #00B207;
 }
+
+.full-info {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+.full-info-top {
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 3.2rem;
+  padding-bottom: 1.6rem;
+}
+
+.full-info-top-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.2rem;
+}
+
+.full-info-top-mid .navigate a:hover {
+  border-bottom: 2px solid #00B207;
+}
+
+.full-info-top-mid .navigate a {
+  padding-bottom: 1.6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.full-info-top-mid .navigate a:hover {
+  color: #00B207;
+}
+
+.full-info .information {
+  margin-top: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full-info .information-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.4rem;
+}
+
+.full-info .information-left .first-p {
+  margin-bottom: 0.8rem;
+}
+
+.full-info .information-left p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-info .information-left .tick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-info .information-left .bottom-p {
+  margin-top: 0.6rem;
+}
+
+.full-info .information-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.full-info .information-right .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 536px;
+  height: 300px;
+  background-image: url("../../images/red-cap-guy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.full-info .information-right .img-green {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #00B207;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-info .information-right .img-bottom {
+  border: 1px solid #E5E5E5;
+  border-radius: 6px;
+  padding: 2.4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-info .information-right .img-bottom-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-info .information-right .img-bottom-item .discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+
+.full-info .information-right .img-bottom-item .discount-black {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-info .information-right .img-bottom-item .discount-grey {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 150%;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */

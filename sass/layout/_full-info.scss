@@ -1,0 +1,99 @@
+.full-info{
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    &-top{
+        border-bottom: 1px solid $grey-e5;
+        margin-bottom: 3.2rem;
+        padding-bottom: 1.6rem;
+   &-mid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   gap: 3.2rem;
+    .navigate{
+      
+      a:hover{
+        border-bottom: 2px solid $green;
+      }
+        
+        a{
+            padding-bottom: 1.6rem;
+            @include font(500, 1.6rem, 150%, $search-placeholder);
+            text-decoration: none;
+            &:hover{
+                color: $green;
+          
+            }
+        }
+    }
+   }     
+    }
+    .information{
+        margin-top: 3.2rem;
+        @include space-between();
+        &-left{
+            @include col(1.4rem);
+            .first-p{
+                margin-bottom: 0.8rem;
+            }
+                    p {
+                            @include font(400, 1.4rem, 150%, $search-placeholder);
+                        }
+                    
+                    
+                            .tick {
+                                @include row-align-cen(0.8rem);
+                            }
+                   
+             .bottom-p{
+                margin-top: 0.6rem;
+             }               
+        }
+    &-right{
+        @include col(2rem);
+        .img{
+                            display: flex;
+                                align-items: center;
+                                justify-content: center;
+                width: 536px;
+                    height: 300px;
+                    
+                
+                    background-image: url("../../images/red-cap-guy.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+        
+                    &-green{
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        background-color: $green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+        }
+     .img-bottom{
+        border: 1px solid $grey-e5;
+        border-radius: 6px;
+        padding: 2.4rem 2rem;
+        @include row-align-cen(2.2rem);
+        &-item{
+            @include row-align-cen(1.2rem);
+            .discount{
+                @include col(0.6rem);
+                &-black{
+@include font(500, 1.4rem, 150%, $black-text);
+                }
+            &-grey{
+@include font(400, 1.3rem, 150%, $search-placeholder);
+            }
+
+            }
+        }
+     }   
+    }    
+    }
+}
