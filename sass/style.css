@@ -305,6 +305,27 @@ body {
 
 .header .black.detail {
   background-color: #FFFFFF;
+  border-top: 1px solid #E6E6E6;
+}
+
+.header .black.detail .mid .left nav ul li a {
+  color: #999999;
+}
+
+.header .black.detail .mid .right a {
+  color: #1A1A1A;
+}
+
+.header .black.detail .mid .right svg path {
+  stroke: #1A1A1A;
+}
+
+.header .black.detail .mid .left nav ul li:hover a {
+  color: #00B207;
+}
+
+.header .black.detail .mid .left nav ul li:hover svg path {
+  stroke: #00B207;
 }
 
 .header .black .mid {

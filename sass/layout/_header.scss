@@ -150,6 +150,35 @@
 
         &.detail {
             background-color: $white;
+            border-top: 1px solid $light-gray;
+
+            
+                    .mid {
+                        .left nav ul li a {
+                            color: $black-header-color; // default link color in detail page
+                        }
+            
+                        .right {
+                          a{
+                            color: $black-text; // right-side links in detail page
+                          }
+                          svg path{
+                            stroke: $black-text;
+                          }
+                        }
+            
+                        .left nav ul li:hover{
+                           a{
+                            color: $green; // hover effect (optional)
+                           }
+                           svg path{
+                            stroke: $green;
+                           }
+                        }
+            // .left nav ul li:hover svg path {
+            // stroke: $white;
+            //             }
+                    }
         }
 
         .mid {
