@@ -3,6 +3,9 @@
     margin-top: 2.4rem;
 .mid{
     @include row-align-cen(2.4rem);
+    @media (max-width:767px){
+        @include col(5rem);
+    }
         .big {
             position: relative;
                 width: 872px;
@@ -14,7 +17,19 @@
                 background-position: left;
                 background-size: cover;
                 background-position: center left;
+                @media(max-width: 1090px){
+                            background-image: url("../../images/hero-img.jpg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                    background-size: cover;
+                                    
+                }
+                
               @include col-start(2.4rem);
+              @media(max-width:767px){
+                
+                @include col-cen(2.4rem);
+              }
               padding: 15rem 0 0 6rem;
                 // &::after {
                 //         content: "";
@@ -28,6 +43,7 @@
             h1{
             @include font(600, 4.8rem, 120%, $white);
             // z-index: 2;
+
             }
             .sale{
                 // z-index: 2;
@@ -39,6 +55,9 @@
                 @include row-align-cen(0.8rem);
                 h6{
             @include font(500, 2rem, 150%, $white);
+                        @media (max-width:767px) {
+                                color: $black-text;
+                            }
                 }
                 .orange{
                     background-color: $orange;
@@ -46,24 +65,35 @@
                     padding: 0.4rem 1.2rem;
                     h6{
             @include font(600, 2rem, 150%, $white);
+            
                     }
                 }
               }  
               h6{
         @include font(400, 1.4rem, 150%, $white);
+                    @media (max-width:767px) {
+                            color: $black-text;
+                        }
               }
             } 
             button{
                @include button(1.6rem 4rem,$green,1.6rem);
                 @include row-align-cen(1.6rem);
                 @include font(600, 1.6rem, 120%, $green);
+                            @media (max-width:767px) {
+                                    background-color: $green;
+                                    color: $white;
+                                    svg path{
+                                        stroke: $white;
+                                    }
+                                }
             }   
             }
 
             .smalls {
                 @include col(2.4rem);
         
-                .small1 {
+      .small1 {
                     width: 423px;
                     height: 250px;
                     border-radius: 10px;
@@ -71,6 +101,12 @@
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
+                    @media(max-width:860px){
+                        width: 350px;
+                    }
+                                                        @media(max-width:767px) {
+                                                          display: none;
+                                                        }
                  @include col-start(0.8rem);
                  padding: 3.2rem 0 0 3.2rem;
 .first{
@@ -97,6 +133,12 @@
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
+                            @media(max-width:860px) {
+                                    width: 350px;
+                                }
+                                                                                @media(max-width:767px) {
+                                                                               display: none;
+                                                                                }
              @include col-cen(1.2rem);
              
                     h6{
@@ -120,6 +162,9 @@
 box-shadow: 0px 8px 40px 0px #00260314;
 margin-top: 2.4rem;
 border-radius: 8px;
+@media(max-width:767px){
+    display: none;
+}
 .box{
     @include row-align-cen(1.6rem);
     .texts {

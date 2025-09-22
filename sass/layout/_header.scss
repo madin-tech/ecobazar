@@ -73,7 +73,9 @@
                 border-radius: 6px 0 0 6px;
                 @include row-align-cen(0);
                 padding-right: 10rem;
-
+                    @media (max-width:612px) {
+                            padding-right: 3rem;
+                        }
                 img {
                     margin: 1.2rem 0.8rem 1.2rem 1.6rem;
                 }
@@ -83,6 +85,7 @@
                     padding: 1.2rem 0 1.2rem 0rem;
                     outline: none;
                     @include font(400, 1.5rem, 2.1rem, $search-placeholder);
+
                 }
             }
 
@@ -101,10 +104,27 @@
             .icon {
                 padding-right: 1.6rem;
                 border-right: 2px solid $light-gray;
+       .heart{
+                @media(max-width:767px) {
+                        display: none;
+                    }
+       }
+                                        .burger {
+                                            height: 32px;
+                                            width: 32px;
+                                            display: none;
+                    
+                                            @media(max-width:767px) {
+                                                display: flex;
+                                            }
+                                        }
             }
 
             .shopping {
                 @include row-align-cen(1.2rem);
+                @media(max-width:767px){
+                    display: none;
+                }
 
                 .bag {
                     position: relative;
@@ -145,9 +165,12 @@
     }
 
     .black {
+
         background-color: $header-bg;
         padding: 1.9rem 0 1.9rem 0;
-
+  @media(max-width:767px){
+    display: none;
+  }
         &.detail {
             background-color: $white;
             border-top: 1px solid $light-gray;
