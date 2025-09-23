@@ -210,6 +210,12 @@ body {
   }
 }
 
+@media (max-width: 545px) {
+  .header .bottom .search .search-left {
+    border-right: 1px solid #E6E6E6;
+  }
+}
+
 .header .bottom .search .search-left img {
   margin: 1.2rem 0.8rem 1.2rem 1.6rem;
 }
@@ -235,6 +241,12 @@ body {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   border-radius: 0 6px 6px 0;
+}
+
+@media (max-width: 545px) {
+  .header .bottom .search button {
+    display: none;
+  }
 }
 
 .header .bottom .bottom-right {
@@ -932,6 +944,22 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1199px) {
+  .popular .categ .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30rem;
+  }
+}
+
 .popular .categ .top h2 {
   font-weight: 600;
   font-size: 3.2rem;
@@ -975,6 +1003,25 @@ body {
   gap: 2.4rem;
 }
 
+@media (max-width: 1199px) {
+  .popular .categ .mid {
+    display: none;
+  }
+}
+
+@media (max-width: 652px) {
+  .popular .categ .mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
 .popular .categ .mid .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,6 +1034,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .popular .categ .mid .top {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .popular .categ .mid .top .box {
@@ -1022,6 +1080,100 @@ body {
 }
 
 .popular .categ .mid .top .box h5 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.popular .categ .mid2 {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .popular .categ .mid2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 652px) {
+  .popular .categ .mid2 {
+    display: none;
+  }
+}
+
+.popular .categ .mid2 .box-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.popular .categ .mid2 .box-col .box-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular .categ .mid2 .box-col .box-row .box {
+  padding: 1.6rem 0.5rem 2.4rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular .categ .mid2 .box-col .box-row .box:hover {
+  border: 1px solid #2C742F;
+  -webkit-box-shadow: 0px 0px 12px 0px #20B52652;
+          box-shadow: 0px 0px 12px 0px #20B52652;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.popular .categ .mid2 .box-col .box-row .box:hover h5 {
+  color: #2C742F;
+}
+
+.popular .categ .mid2 .box-col .box-row .box h5 {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 150%;

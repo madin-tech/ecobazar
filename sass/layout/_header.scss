@@ -76,6 +76,9 @@
                     @media (max-width:612px) {
                             padding-right: 3rem;
                         }
+                                                                                @media (max-width:545px) {
+                                                                            border-right: 1px solid $light-gray;
+                                                                                }
                 img {
                     margin: 1.2rem 0.8rem 1.2rem 1.6rem;
                 }
@@ -85,7 +88,7 @@
                     padding: 1.2rem 0 1.2rem 0rem;
                     outline: none;
                     @include font(400, 1.5rem, 2.1rem, $search-placeholder);
-
+              
                 }
             }
 
@@ -95,6 +98,9 @@
                 border: none;
                 @include font(600, 1.4rem, 120%, $white);
                 border-radius: 0 6px 6px 0;
+                @media (max-width:545px){
+                    display: none;
+                }
             }
         }
 
