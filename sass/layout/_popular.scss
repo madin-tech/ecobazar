@@ -8,7 +8,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 30rem;
+                gap: 58rem;
             }
             h2{
         @include font(600, 3.2rem, 120%, $black-text);
@@ -28,6 +28,7 @@
             @media (max-width:652px){
             @include col(2.4rem);
             }
+          
        
             .top{
               @include row-align-cen(2.4rem);  
@@ -36,7 +37,7 @@
                 height: 100vh;
                 display: grid;
               grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-               
+               gap: 20px;
              
               }
                 .box{
@@ -58,6 +59,11 @@
                     }
                 }
             }
+            .disapear{
+              @media (max-width:430px){
+                display: none;
+              }  
+            }
         }
                                 .mid2{
                            
@@ -70,6 +76,7 @@
                         
                         
                             }
+                                                                             
                                     .box-col {
                                         @include col(2.4rem);
                 
@@ -105,7 +112,15 @@
         margin-top: 5rem;
         .top {
                 @include space-between();
-           
+                @media (max-width:1199px) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 50rem;
+                    }
+                    @media (max-width: 639px){
+                        @include space-between();
+                    }
                 h2 {
                     @include font(600, 3.2rem, 120%, $black-text);
                 }
@@ -119,7 +134,24 @@
             .mid{
                 @include col(0);
                 margin-bottom: 6rem;
+                @media (max-width:1199px){
+                    display: none;
+                }
+                @media (max-width:767px){
+                    @include col(2.4rem);
+                }
+                                                        @media (max-width:652px) {
+                                                            @include col(2.4rem);
+                                                        }
                 .top{
+                                            @media(max-width:767px) {
+                                                    width: 100%;
+                                                    height: 100vh;
+                                                    display: grid;
+                                                    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+                                                    gap: 20px;
+                                            
+                                                }
                     .box{
                     border: 1px solid $light-gray;
                     position: relative;
@@ -210,7 +242,128 @@
                       }  
                     }
                 }
+                                                        .disapear {
+                                                            @media (max-width:430px) {
+                                                                display: none;
+                                                            }
+                                                        }
             }
+                                                .mid2{
+                                                    @include col(20px);
+                                                    margin-bottom: 6rem;
+                        @media (max-width:767px){
+                            display: none;
+                        }
+                                                    .col {
+                                                        @include col-cen(20px);
+                                            
+.row{
+    @include row(20px);
+                                                            .box {
+                                                                    border: 1px solid $light-gray;
+                                                                    position: relative;
+                                                            
+                                                                    &:hover {
+                                                                        border: 1px solid $dark-green;
+                                                                        box-shadow: 0px 0px 12px 0px #20B52652;
+                                                                        transition: 0.5s ease;
+                                                            
+                                                                        .box-bottom .left p {
+                                                                            color: $dark-green;
+                                                                            transition: 0.8s ease;
+                                                                        }
+                                                            
+                                                                        .box-bottom .bag {
+                                                                            background-color: $dark-green;
+                                                                            transition: 0.8s ease;
+                                                                        }
+                                                            
+                                                                        .box-bottom .bag svg path {
+                                                                            stroke: $white;
+                                                                            transition: 0.8s ease;
+                                                                        }
+                                                            
+                                                                        transition: 0.8s ease;
+                                                                    }
+                                                            
+                                                                    img {
+                                                                        margin: 0.5rem;
+                                                                    }
+                                                            
+                                                                    .red {
+                                                                        padding: 0.3rem 0.8rem;
+                                                                        background-color: $red;
+                                                                        width: 80px;
+                                                                        height: 27px;
+                                                                        border-radius: 4px;
+                                                                        position: absolute;
+                                                                        top: 16px;
+                                                                        left: 16px;
+                                                            
+                                                                        h6 {
+                                                                            @include font(400, 1.4rem, 150%, $white);
+                                                                        }
+                                                                    }
+                                                            
+                                                                    .circles {
+                                                                        position: absolute;
+                                                                        top: 16px;
+                                                                        right: 16px;
+                                                                        @include col(0.6rem);
+                                                            
+                                                                        .circle {
+                                                                            width: 40px;
+                                                                            height: 40px;
+                                                                            border-radius: 50%;
+                                                                            border: 1px solid $bag-bg;
+                                                                            background-color: $white;
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                        }
+                                                                    }
+                                                            
+                                                                    .box-bottom {
+                                                                        @include space-between-cen();
+                                                                        padding: 1.2rem;
+                                                            
+                                                                        .left {
+                                                                            @include col(0);
+                                                            
+                                                                            p {
+                                                                                @include font(400, 1.4rem, 150%, $text);
+                                                                            }
+                                                            
+                                                                            .cost {
+                                                                                @include row-align-cen(0.2rem);
+                                                            
+                                                                                .black {
+                                                                                    @include font(500, 1.6rem, 150%, $black-text);
+                                                                                }
+                                                            
+                                                                                .grey {
+                                                                                    @include font(400, 1.6rem, 150%, $black-header-color);
+                                                                                    text-decoration: line-through;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                            
+                                                                        .bag {
+                                                                            height: 40px;
+                                                                            width: 40px;
+                                                                            border-radius: 50%;
+                                                                            background-color: $bag-bg;
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                            
+                                                                        }
+                                                            
+                                                                    }
+                                                                }
+}
+                                                    }
+                                                }
     }
     .last{
         @include space-between();

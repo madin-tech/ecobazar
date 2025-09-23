@@ -956,7 +956,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 30rem;
+    gap: 58rem;
   }
 }
 
@@ -1044,6 +1044,7 @@ body {
     display: grid;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
 }
 
@@ -1085,6 +1086,12 @@ body {
   line-height: 150%;
   color: #1A1A1A;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 430px) {
+  .popular .categ .mid .disapear {
+    display: none;
+  }
 }
 
 .popular .categ .mid2 {
@@ -1198,6 +1205,37 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1199px) {
+  .popular .product .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .popular .product .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .popular .product .top h2 {
   font-weight: 600;
   font-size: 3.2rem;
@@ -1240,6 +1278,50 @@ body {
           flex-direction: column;
   gap: 0;
   margin-bottom: 6rem;
+}
+
+@media (max-width: 1199px) {
+  .popular .product .mid {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .popular .product .mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 652px) {
+  .popular .product .mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .popular .product .mid .top {
+    width: 100%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(264px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    gap: 20px;
+  }
 }
 
 .popular .product .mid .top .box {
@@ -1397,6 +1479,228 @@ body {
 }
 
 .popular .product .mid .top .box .box-bottom .bag {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 430px) {
+  .popular .product .mid .disapear {
+    display: none;
+  }
+}
+
+.popular .product .mid2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 767px) {
+  .popular .product .mid2 {
+    display: none;
+  }
+}
+
+.popular .product .mid2 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular .product .mid2 .col .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.popular .product .mid2 .col .row .box {
+  border: 1px solid #E6E6E6;
+  position: relative;
+}
+
+.popular .product .mid2 .col .row .box:hover {
+  border: 1px solid #2C742F;
+  -webkit-box-shadow: 0px 0px 12px 0px #20B52652;
+          box-shadow: 0px 0px 12px 0px #20B52652;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.popular .product .mid2 .col .row .box:hover .box-bottom .left p {
+  color: #2C742F;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.popular .product .mid2 .col .row .box:hover .box-bottom .bag {
+  background-color: #2C742F;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.popular .product .mid2 .col .row .box:hover .box-bottom .bag svg path {
+  stroke: #FFFFFF;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.popular .product .mid2 .col .row .box img {
+  margin: 0.5rem;
+}
+
+.popular .product .mid2 .col .row .box .red {
+  padding: 0.3rem 0.8rem;
+  background-color: #EA4B48;
+  width: 80px;
+  height: 27px;
+  border-radius: 4px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.popular .product .mid2 .col .row .box .red h6 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
+.popular .product .mid2 .col .row .box .circles {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+
+.popular .product .mid2 .col .row .box .circles .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #F2F2F2;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .left p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #4D4D4D;
+  font-family: "Poppins", sans-serif;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .left .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .left .cost .black {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .left .cost .grey {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+  text-decoration: line-through;
+}
+
+.popular .product .mid2 .col .row .box .box-bottom .bag {
   height: 40px;
   width: 40px;
   border-radius: 50%;
