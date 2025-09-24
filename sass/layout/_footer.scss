@@ -7,6 +7,9 @@
             @include row-align-cen(7.5rem);
             &-left{
                 @include col(0.4rem);
+                @media (max-width:1116px){
+                    display: none;
+                }
                 h5{
                 @include font(600, 2.4rem, 150%, $black-text);
                 }
@@ -16,6 +19,7 @@
             }
 &-right{
     @include row(4rem);
+
                 &-middle {
                     padding: 0;
                         background-color: $white;
@@ -25,11 +29,19 @@
                         flex-direction: row;
                         gap: 0;
                         align-items: center;
+                          
                         input {
                             outline: none;
                             padding: 1.4rem 25rem 1.4rem 2.4rem;
                             background-color: transparent;
                             border: none;
+                            @media (max-width:528px){
+                                padding: 1.4rem 10rem 1.4rem 2.4rem;
+                            }
+                                                                        //   @media (max-width:407px) {
+                                                                        //       display: flex;
+                                                                        //       justify-content: center;
+                                                                        //   }
                         }
                 
                         button {
@@ -38,10 +50,16 @@
                             border: none;
                             background-color: $green;
                             @include font(600, 1.6rem, 20px, $white);
+                            @media (max-width:407px){
+                       display: none;
+                            }
                         }
                     }
          &-last{
             @include row(0.8rem);
+                @media (max-width:737px) {
+                        display: none;
+                    }
        &-box{
         width: 40px;
         height: 40px;
@@ -67,8 +85,16 @@
         // padding-bottom: 6rem;
         &-mid{
             @include space-between();
+                @media (max-width:411px) {
+                    display: flex;
+                    gap: 4rem;
+                    justify-content: center;
+                    }
             &-left{
                 @include col-start(1.6rem);
+                @media (max-width:810px){
+                    display: none;
+                }
                h6{
                 @include font(400, 1.4rem, 150%, $search-placeholder);
                } 
@@ -100,8 +126,16 @@
                     }
                 }
             }
+            .none{
+                @media (max-width:411px){
+                    display: none;
+                }
+            }
             .last-nav{
                 margin-right: 6rem;
+                        @media (max-width:411px) {
+                              margin: 0;
+                            }
             }
         }
         .footer-bottom{
@@ -109,12 +143,20 @@
             padding: 2.9rem 0 2.9rem 0;
             @include space-between();
             &-left{
+                @media (max-width:413px){
+                    display: none;
+                }
                 p{
                 @include font(400, 1.4rem, 150%, $search-placeholder);
                 }
             }
             .pay{
                 @include row-align-cen(0.8rem);
+                        // @media (max-width:407px) {
+                        //         display: flex;
+                        //         align-items: center;
+                        //         justify-content: center;
+                        //     }
             }
         }
     }

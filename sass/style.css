@@ -4746,6 +4746,12 @@ body {
   gap: 0.4rem;
 }
 
+@media (max-width: 1116px) {
+  .footer .gray-mid-left {
+    display: none;
+  }
+}
+
 .footer .gray-mid-left h5 {
   font-weight: 600;
   font-size: 2.4rem;
@@ -4798,6 +4804,12 @@ body {
   border: none;
 }
 
+@media (max-width: 528px) {
+  .footer .gray-mid-right-middle input {
+    padding: 1.4rem 10rem 1.4rem 2.4rem;
+  }
+}
+
 .footer .gray-mid-right-middle button {
   border-radius: 43px;
   padding: 1.6rem 4rem;
@@ -4810,6 +4822,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 407px) {
+  .footer .gray-mid-right-middle button {
+    display: none;
+  }
+}
+
 .footer .gray-mid-right-last {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4819,6 +4837,12 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.8rem;
+}
+
+@media (max-width: 737px) {
+  .footer .gray-mid-right-last {
+    display: none;
+  }
 }
 
 .footer .gray-mid-right-last-box {
@@ -4864,6 +4888,18 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 411px) {
+  .footer .black-mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer .black-mid-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4879,6 +4915,12 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   gap: 1.6rem;
+}
+
+@media (max-width: 810px) {
+  .footer .black-mid-left {
+    display: none;
+  }
 }
 
 .footer .black-mid-left h6 {
@@ -4938,8 +4980,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 411px) {
+  .footer .black-mid .none {
+    display: none;
+  }
+}
+
 .footer .black-mid .last-nav {
   margin-right: 6rem;
+}
+
+@media (max-width: 411px) {
+  .footer .black-mid .last-nav {
+    margin: 0;
+  }
 }
 
 .footer .black .footer-bottom {
@@ -4955,6 +5009,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 413px) {
+  .footer .black .footer-bottom-left {
+    display: none;
+  }
 }
 
 .footer .black .footer-bottom-left p {
