@@ -6,6 +6,12 @@
             padding-bottom: 3.5rem;
             padding-top: 6rem;
             @include space-between();
+            @media (max-width:670px){
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+            }
             h2{
 @include font(600, 3.2rem, 120%, $black-text);
             }
@@ -32,6 +38,15 @@
         }
         .boxes{
             @include space-between();
+                @media (max-width:1199px) {
+                        display: flex;
+                        gap: 40px;
+                        justify-content: center;
+                    }
+                
+                    @media (max-width:670px) {
+                        @include col-cen(20px);
+                    }
             .box{
                 box-shadow: 0px 10px 20px 0px #00000003;
                 border-radius: 8px;
@@ -61,6 +76,15 @@
                    }
                 }
             }
+                                 .no {
+                                     @media (max-width:1199px) {
+                                         display: none;
+                                     }
+                
+                                     @media (max-width:670px) {
+                                         display: flex;
+                                     }
+                                 }
         }
     }
 }

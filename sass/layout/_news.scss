@@ -2,6 +2,15 @@
     &-mid{
         @include space-between();
         margin-bottom: 6rem;
+            @media (max-width:1199px) {
+                    display: flex;
+                    gap: 40px;
+                    justify-content: center;
+                }
+            
+                @media (max-width:670px) {
+                    @include col-cen(20px);
+                }
         &-box{
             border-radius: 8px;
             @include col(0);
@@ -44,5 +53,14 @@
                                 }
           }  
         }
+                         .no {
+                             @media (max-width:1199px) {
+                                 display: none;
+                             }
+            
+                             @media (max-width:670px) {
+                                 display: flex;
+                             }
+                         }
     }
 }

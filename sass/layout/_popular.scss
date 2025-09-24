@@ -240,7 +240,7 @@
             }
             .mid{
                 @include col(0);
-                // margin-bottom: 6rem;
+               
                 @media (max-width:1199px){
                     display: none;
                 }
@@ -622,6 +622,15 @@
     .last{
         @include space-between();
         margin-bottom: 6rem;
+      margin-top: 6rem;
+      @media (max-width:1199px){
+       display: flex;
+       gap: 40px;
+       justify-content: center;
+      }
+      @media (max-width:670px){
+        @include col-cen(20px);
+      }
         .box1{
             padding: 3.5rem;
                         width: 424px;
@@ -741,5 +750,13 @@
                                                                                                       @include font(600, 1.6rem, 120%, $green);
                                                                                                   }
      }   
+     .no{
+        @media (max-width:1199px){
+            display: none;
+        }
+        @media (max-width:670px){
+            display: flex;
+        }
+     }
     }
 }
