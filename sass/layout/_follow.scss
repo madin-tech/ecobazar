@@ -3,6 +3,9 @@
     padding-bottom: 6rem;
     .logos{
         @include space-between();
+        @media (max-width:758px){
+            display: none;
+        }
         svg:hover{
            
          path{
@@ -23,6 +26,34 @@
        
 @include space-between();
 padding-bottom: 6rem;
+@media (max-width:1199px){
+    display: none;
+}
+       }
+       &-mid2{
+display: none;
+@media (max-width:1199px){
+    @include col-cen(4rem);
+}
+&-row{
+
+        @include row-align-cen(4rem);
+        @media (max-width:378px) {
+            @include col-cen(4rem);
+        }
+    .no {
+            // @media (max-width:1199px) {
+            //     display: none;
+            // }
+    
+            @media (max-width:610px) {
+                display: none;
+            }
+                                                @media (max-width:378px) {
+                                                    display: flex;
+                                                }
+        }
+}
        } 
     }
 }
