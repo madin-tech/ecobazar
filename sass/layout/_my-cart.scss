@@ -11,6 +11,9 @@
     .cart-mid{
         @include space-between-align-start();
         margin-top: 3.2rem;
+        @media (max-width:1199px){
+            @include col-cen(4rem);
+        }
         &-left{
             @include col(2.4rem);
             &-top{
@@ -27,20 +30,39 @@
                     &-first{
                         margin-left: 2rem;
                         margin-right: 24rem;
+                                    @media (max-width:723px) {
+                                        margin-right: 15rem;
+                                        }
                     }
                     &-third{
                         margin-right: 4rem;
+                                    @media (max-width:723px) {
+                                            margin-right: 0rem;
+                                            margin-left: 2rem;
+                                        }
                     }
+                                                                                         .keremas {
+                                                                                             @media (max-width:608px) {
+                                                                                                 display: none;
+                                                                                             }
+                                                                                         }
                 }
                 .box{
                     @include row-align-cen(6.2rem);
                     padding: 1.2rem 2rem;
                     border-bottom: 1px solid $grey-e5;
+                    @media (max-width:538px){
+                    @include row-align-cen(3rem);
+                    }
                     .product-img{
                         @include row-align-cen(1.2rem);
                         margin-right: 5rem;
+                                    @media (max-width:723px) {
+                                            margin-right: 0rem;
+                                        }
                         h6{
                 @include font(400, 1.6rem, 150%, $black-text);
+
                         }
                     }
                     .price{
@@ -63,6 +85,11 @@
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
+                                    }
+                                }
+                                .keremas{
+                                    @media (max-width:608px){
+                                        display: none;
                                     }
                                 }
                 }
@@ -95,13 +122,15 @@
                                         flex-direction: row;
                                         gap: 0;
                                         align-items: center;
-                                
+                                           
                                         input {
                                             outline: none;
                                             padding: 1.4rem 25rem 1.4rem 2.4rem;
                                             background-color: transparent;
                                             border: none;
-                                
+                                              @media (max-width:723px){
+                                                padding: 1.4rem 14rem 1.4rem 2.4rem;
+                                         }
                                             @media (max-width:528px) {
                                                 padding: 1.4rem 10rem 1.4rem 2.4rem;
                                             }
@@ -118,8 +147,8 @@
                                             border: none;
                                             background-color: $header-bg;
                                             @include font(600, 1.6rem, 20px, $white);
-                                
-                                            @media (max-width:407px) {
+                           
+                                            @media (max-width:637px) {
                                                 display: none;
                                             }
                                         }
