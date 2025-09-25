@@ -2,11 +2,17 @@
     &-middle{
 @include space-between();
 margin-top: 3.2rem;
+@media (max-width:1199px){
+    @include col-cen(3rem);
+}
       &-left{
         @include row-align-cen(1.2rem);
         .little-boxes{
             position: relative;
             @include col(1.2rem);
+            @media (max-width:539px){
+                display: none;
+            }
             .up{
                 position: absolute;
                 top: -56px;
@@ -90,6 +96,14 @@ margin-top: 3.2rem;
                                                                 background-repeat: no-repeat;
                                                                 background-position: center;
                                                                 background-size: cover;
+                    @media (max-width:640px){
+                        width: 450px;
+                        height: 450px;
+                    } 
+                                                                @media (max-width:539px) {
+                                                                        width: 350px;
+                                                                            height: 350px;
+                                                                }
         }
       }  
       &-right{
@@ -163,6 +177,9 @@ margin-bottom: 2.4rem;
            }
 .brand-top{
     @include row-align-cen(27rem);
+    @media (max-width:532px){
+        display: none;
+    }
                 .brand-part {
                         @include row-align-cen(0.8rem);
                 
@@ -227,6 +244,9 @@ margin-bottom: 2.4rem;
                 border: none;
                 @include font(600, 1.6rem, 120%, $white);
                 border-radius: 43px;
+                    @media (max-width:532px) {
+                        padding: 1.6rem 5rem;
+                        }
             }
             .like{
              background-color: $light-green; 
