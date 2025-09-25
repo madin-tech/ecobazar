@@ -5,6 +5,12 @@
         border-bottom: 1px solid $grey-e5;
         margin-bottom: 3.2rem;
         padding-bottom: 1.6rem;
+            @media (max-width:1199px) {
+                   margin-top: 6rem;
+                }
+                                                        @media (max-width:447px) {
+                                                         display: none;
+                                                        }
    &-mid{
     display: flex;
     flex-direction: row;
@@ -32,6 +38,9 @@
     .information{
         margin-top: 3.2rem;
         @include space-between();
+        @media (max-width:1199px){
+            @include col-cen(5rem);
+        }
         &-left{
             @include col(1.4rem);
             .first-p{
@@ -52,6 +61,9 @@
         }
     &-right{
         @include col(2rem);
+            @media (max-width:1199px) {
+                    @include col-cen(2rem);
+                }
         .img{
                             display: flex;
                                 align-items: center;
@@ -64,7 +76,14 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-        
+           @media (max-width:558px){
+            width: 436px;
+                height: 250px;
+           }
+                                          @media (max-width:455px) {
+                                              width: 336px;
+                                              height: 200px;
+                                          }
                     &-green{
                         height: 50px;
                         width: 50px;

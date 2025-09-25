@@ -49,6 +49,12 @@ body {
   border-bottom: 2px solid #E6E6E6;
 }
 
+@media (max-width: 491px) {
+  .header .top {
+    display: none;
+  }
+}
+
 .header .top .mid {
   padding: 1.3rem 0 1.3rem 0;
   display: -webkit-box;
@@ -5674,6 +5680,18 @@ body {
   padding-bottom: 1.6rem;
 }
 
+@media (max-width: 1199px) {
+  .full-info-top {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 447px) {
+  .full-info-top {
+    display: none;
+  }
+}
+
 .full-info-top-mid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5721,6 +5739,25 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+  .full-info .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .full-info .information-left {
@@ -5775,6 +5812,25 @@ body {
   gap: 2rem;
 }
 
+@media (max-width: 1199px) {
+  .full-info .information-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .full-info .information-right .img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5791,6 +5847,20 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 558px) {
+  .full-info .information-right .img {
+    width: 436px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 455px) {
+  .full-info .information-right .img {
+    width: 336px;
+    height: 200px;
+  }
 }
 
 .full-info .information-right .img-green {
@@ -5900,6 +5970,12 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 1199px) {
+  .related-mid {
+    display: none;
+  }
 }
 
 .related-mid .box {
@@ -6057,6 +6133,262 @@ body {
 }
 
 .related-mid .box .box-bottom .bag {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.related-mid2 {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .related-mid2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.related-mid2 .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 703px) {
+  .related-mid2 .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 447px) {
+  .related-mid2 .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.related-mid2 .two .box {
+  border: 1px solid #E6E6E6;
+  position: relative;
+}
+
+.related-mid2 .two .box:hover {
+  border: 1px solid #2C742F;
+  -webkit-box-shadow: 0px 0px 12px 0px #20B52652;
+          box-shadow: 0px 0px 12px 0px #20B52652;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.related-mid2 .two .box:hover .box-bottom .left p {
+  color: #2C742F;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.related-mid2 .two .box:hover .box-bottom .bag {
+  background-color: #2C742F;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.related-mid2 .two .box:hover .box-bottom .bag svg path {
+  stroke: #FFFFFF;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.related-mid2 .two .box img {
+  margin: 0.5rem;
+}
+
+@media (max-width: 670px) {
+  .related-mid2 .two .box img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 447px) {
+  .related-mid2 .two .box img {
+    height: 302px;
+    width: 302px;
+  }
+}
+
+.related-mid2 .two .box .red {
+  padding: 0.3rem 0.8rem;
+  background-color: #EA4B48;
+  width: 80px;
+  height: 27px;
+  border-radius: 4px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.related-mid2 .two .box .red h6 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
+.related-mid2 .two .box .circles {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+
+.related-mid2 .two .box .circles .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #F2F2F2;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.related-mid2 .two .box .box-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.related-mid2 .two .box .box-bottom .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.related-mid2 .two .box .box-bottom .left p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #4D4D4D;
+  font-family: "Poppins", sans-serif;
+}
+
+.related-mid2 .two .box .box-bottom .left .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.related-mid2 .two .box .box-bottom .left .cost .black-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.related-mid2 .two .box .box-bottom .left .cost .grey {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+  text-decoration: line-through;
+}
+
+.related-mid2 .two .box .box-bottom .bag {
   height: 40px;
   width: 40px;
   border-radius: 50%;
