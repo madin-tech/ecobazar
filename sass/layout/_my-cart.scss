@@ -1,0 +1,167 @@
+.my-cart{
+    margin-bottom: 8rem;
+    .head{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        h2{
+    @include font(600, 3.2rem, 120%, $black-text);
+        }
+    }
+    .cart-mid{
+        @include space-between-align-start();
+        margin-top: 3.2rem;
+        &-left{
+            @include col(2.4rem);
+            &-top{
+                border: 1px solid $grey-e5;
+                border-radius: 8px;
+                @include col(0);
+                .names{
+                    margin-top: 1.6rem;
+                   
+                    @include row-align-cen(7.3rem);
+                    p{
+                @include font(500, 1.4rem, 100%, $search-placeholder);
+                    }
+                    &-first{
+                        margin-left: 2rem;
+                        margin-right: 24rem;
+                    }
+                    &-third{
+                        margin-right: 4rem;
+                    }
+                }
+                .box{
+                    @include row-align-cen(6.2rem);
+                    padding: 1.2rem 2rem;
+                    border-bottom: 1px solid $grey-e5;
+                    .product-img{
+                        @include row-align-cen(1.2rem);
+                        margin-right: 5rem;
+                        h6{
+                @include font(400, 1.6rem, 150%, $black-text);
+                        }
+                    }
+                    .price{
+                @include font(400, 1.6rem, 150%, $black-text);
+                    }
+                            .add {
+                                    padding: 0.8rem;
+                                    border-radius: 170px;
+                                    border: 1px solid $grey-e5;
+                                    @include row-align-cen(1rem);
+                            
+                                    h4 {
+                                        @include font(400, 1.6rem, 150%, $black-text);
+                                    }
+                            
+                                    .count-circle {
+                                        padding: 1rem;
+                                        background-color: $grey-f2;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                }
+                .buttons{
+                    @include space-between();
+                    padding: 1.6rem 2rem;
+                    button{
+                        padding: 1.4rem 3.2rem;
+                        background-color:$grey-f2;
+                        border: none;
+                        border-radius: 43px;
+                        @include font(600, 1.4rem, 120%, $text);
+                    }
+                }
+            }
+            &-bottom{
+                padding: 2rem;
+                @include row-align-cen(2.4rem);
+                                border: 1px solid $grey-e5;
+                                    border-radius: 8px;
+                h3{
+    @include font(500, 2rem, 150%, $black-text);
+                }
+                                .bottom-input {
+                                        padding: 0;
+                                        background-color: $white;
+                                        border: 1px solid $grey-e5;
+                                        border-radius: 46px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 0;
+                                        align-items: center;
+                                
+                                        input {
+                                            outline: none;
+                                            padding: 1.4rem 25rem 1.4rem 2.4rem;
+                                            background-color: transparent;
+                                            border: none;
+                                
+                                            @media (max-width:528px) {
+                                                padding: 1.4rem 10rem 1.4rem 2.4rem;
+                                            }
+                                
+                                            //   @media (max-width:407px) {
+                                            //       display: flex;
+                                            //       justify-content: center;
+                                            //   }
+                                        }
+                                
+                                        button {
+                                            border-radius: 43px;
+                                            padding: 1.6rem 4rem;
+                                            border: none;
+                                            background-color: $header-bg;
+                                            @include font(600, 1.6rem, 20px, $white);
+                                
+                                            @media (max-width:407px) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+            }
+        }
+        &-right{
+            @include col(0.7rem);
+                            border: 1px solid $grey-e5;
+                                border-radius: 8px;
+                                padding: 2.4rem;
+            h3{
+        @include font(500, 2rem, 150%, $black-text);
+            }
+            .cost-box{
+                @include space-between();
+                padding: 1.2rem 0;
+                border-bottom: 1px solid $grey-e5;
+           .about-cost{
+            @include font(400, 1.4rem, 150%, $text);
+           }     
+           .cost{
+        @include font(500, 1.4rem, 150%, $black-text);
+           }
+   
+            }
+            .different{
+                border: none;
+                    .about-cost {
+                            @include font(400, 1.6rem, 150%, $text);
+                        }
+              .cost{
+        @include font(600, 1.6rem, 120%, $black-text);
+           }
+            }
+                                        .btn {
+                                            border-radius: 43px;
+                                            padding:1.6rem 10rem;
+                                            background-color: $green;
+                                            border: none;
+                                        @include font(600, 1.6rem, 120%, $white);
+                                        }
+        }
+    }
+}

@@ -72,7 +72,12 @@ font-family: "Poppins", sans-serif;
     justify-content: space-between;
     align-items: center;
 }
-
+@mixin space-between-align-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
 @mixin space-between-cen {
     display: flex;
     flex-direction: row;
