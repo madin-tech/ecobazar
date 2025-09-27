@@ -7004,4 +7004,206 @@ body {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+
+.drawer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.drawer .box {
+  padding: 3rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+.drawer .box .drawer-top .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.drawer .box .drawer-top .card h6 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-top .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.drawer .box .drawer-top .products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawer .box .drawer-top .products .product-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawer .box .drawer-top .products .product-left .meva-info .name {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-top .products .product-left .meva-info .cost {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-top .products .product-left .meva-info .cost span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-top .products .border {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.drawer .box .drawer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.drawer .box .drawer-bottom .total-cost {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.drawer .box .drawer-bottom .total-cost-product {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-bottom .total-cost-price {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.drawer .box .drawer-bottom .green-btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding: 1.6rem 14.8rem;
+  background-color: #00B207;
+  border: none;
+  border-radius: 43px;
+}
+
+.drawer .box .drawer-bottom .white-btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: #00B207;
+  font-family: "Poppins", sans-serif;
+  padding: 1.6rem 14.8rem;
+  background-color: #56AC591A;
+  border: none;
+  border-radius: 43px;
+}
+
+.opened {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 /*# sourceMappingURL=style.css.map */

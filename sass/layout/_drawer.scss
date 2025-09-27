@@ -1,0 +1,105 @@
+.drawer {
+    // position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    transform: translateX(100vw);
+    transition: 0.5s ease;
+
+    .box {
+        padding: 3rem;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        // transform: translateX(100vw);
+
+        .drawer-top {
+            .card {
+                @include space-between();
+                padding-right: 1rem;
+
+                h6 {
+                    @include font(500, 2rem, 150%, $black-text);
+                }
+            }
+
+            .products {
+                @include col(1.2rem);
+
+                .product {
+                    @include space-between-align();
+
+                    &-left {
+                        @include row-align-cen(0.8rem);
+
+                        .meva-info {
+                            .name {
+                                @include font(400, 1.4rem, 150%, $black-text);
+                            }
+
+                            .cost {
+                                @include font(400, 1.4rem, 150%, $black-header-color);
+
+                                span {
+                                    @include font(600, 1.4rem, 120%, $black-text);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .border {
+                    padding-bottom: 1.2rem;
+                    border-bottom: 1px solid $grey-e5;
+                }
+            }
+        }
+
+        .drawer-bottom {
+            @include col(1.2rem);
+
+            .total-cost {
+                margin-bottom: 1.2rem;
+                @include space-between();
+
+                &-product {
+                    @include font(400, 1.6rem, 150%, $black-text);
+                }
+
+                &-price {
+                    @include font(600, 1.6rem, 120%, $black-text);
+                }
+            }
+
+            .green-btn {
+                @include font(600, 1.6rem, 120%, $white);
+                padding: 1.6rem 14.8rem;
+                background-color: $green;
+                border: none;
+                border-radius: 43px;
+            }
+
+            .white-btn {
+                @include font(600, 1.6rem, 120%, $green);
+                padding: 1.6rem 14.8rem;
+                background-color: $light-green-btn-bg;
+                border: none;
+                border-radius: 43px;
+            }
+        }
+    }
+}
+
+.opened {
+    transform: translateX(0);
+}
