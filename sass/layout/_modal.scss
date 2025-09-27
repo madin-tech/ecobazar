@@ -1,0 +1,108 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100vh);
+    transition: 0.5s ease;
+
+    .box {
+
+        position: relative;
+        background-color: $white;
+        padding: 1rem;
+        border-radius: 8px;
+        @include row-align-cen(4rem);
+
+        &-right {
+            @include col-cen(1.2rem);
+
+            h3 {
+                @include font(600, 4rem, 120%, $black-text);
+            }
+
+            h5 {
+                margin-bottom: 1.2rem;
+                @include font(400, 1.6rem, 150%, $black-header-color);
+
+                span {
+                    @include font(400, 1.6rem, 150%, $orange);
+                }
+            }
+
+            .email {
+                margin-right: 1rem;
+                padding: 0;
+                background-color: $white;
+                border: 1px solid $grey-e5;
+                border-radius: 46px;
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                input {
+                    outline: none;
+                    padding: 1.4rem 10rem 1.4rem 2.4rem;
+                    background-color: transparent;
+                    border: none;
+
+                    // @media (max-width:528px) {
+                    //     padding: 1.4rem 10rem 1.4rem 2.4rem;
+                    // }
+
+                    //   @media (max-width:407px) {
+                    //       display: flex;
+                    //       justify-content: center;
+                    //   }
+                }
+
+                button {
+                    // margin-top: 1.2rem;
+                    // margin-bottom: 5rem;
+
+                    border-radius: 43px;
+                    padding: 1.4rem 3.7rem;
+                    border: none;
+                    background-color: $green;
+                    @include font(600, 1.4rem, 2rem, $white);
+
+                    // @media (max-width:407px) {
+                    //     display: none;
+                    // }
+                }
+            }
+
+            .check {
+                @include row-align-cen(0.6rem);
+                margin-top: 5rem;
+
+                input {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                label {
+                    @include font(400, 1.4rem, 150%, $gray);
+                }
+            }
+        }
+
+        .exit {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+.show {
+    transform: translateY(0);
+}

@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -6841,5 +6842,166 @@ body {
   line-height: 120%;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.modal .box {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .box-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .box-right h3 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 120%;
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal .box-right h5 {
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal .box-right h5 span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FF8A00;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal .box-right .email {
+  margin-right: 1rem;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .box-right .email input {
+  outline: none;
+  padding: 1.4rem 10rem 1.4rem 2.4rem;
+  background-color: transparent;
+  border: none;
+}
+
+.modal .box-right .email button {
+  border-radius: 43px;
+  padding: 1.4rem 3.7rem;
+  border: none;
+  background-color: #00B207;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal .box-right .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.modal .box-right .check input {
+  height: 20px;
+  width: 20px;
+}
+
+.modal .box-right .check label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal .box .exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=style.css.map */
