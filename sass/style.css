@@ -937,6 +937,10 @@ body {
   margin-top: 6rem;
 }
 
+.popular .categ {
+  margin-bottom: 80px;
+}
+
 .popular .categ .top {
   display: -webkit-box;
   display: -ms-flexbox;

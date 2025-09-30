@@ -2,6 +2,7 @@
     margin-top: 6rem;
  
     .categ{
+        margin-bottom: 80px;
         .top{
             @include space-between();
         @media (max-width:1199px) {
