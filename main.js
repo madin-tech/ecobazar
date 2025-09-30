@@ -132,7 +132,48 @@
 //   ]
 // ]
 
+const left = document.querySelector(".carousel-left");
+const right = document.querySelector(".carousel-right");
+const carousel = document.querySelector(".carousel-items");
+current = 0;
+const images = [
+  {
+    src:"./images/veg1.jpg",
+  },
+  {
+    src:"./images/veg2.jpg",
+  },
+  {
+    src:"./images/veg3.jpg",
+  },
+  {
+    src:"./images/veg4.jpg",
+  },
+  {
+    src:"./images/veg5.jpg",
+  }
+];
 
+images.map((item)=>{
+const box = document.createElement("div");
+const img = document.createElement("img");
+box.classList.add("carousel-item");
+img.src=item.src;
+box.appendChild(img);
+carousel.appendChild(box);
+
+});
+
+right.addEventListener("click", ()=>{
+ current++;
+carousel.style.transform = `translateX(-${current*33.33}%)`;
+});
+
+
+left.addEventListener("click", ()=>{
+current--;
+carousel.style.transform = `translateX(-${current*33.33}%)`;
+});
 
 
 
