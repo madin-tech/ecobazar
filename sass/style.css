@@ -7205,4 +7205,78 @@ body {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel button {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel .carousel-left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.carousel .carousel-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.carousel .carousel-mid {
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+
+.carousel .carousel-mid .carousel-items {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel .carousel-mid .carousel-items .carousel-item {
+  width: 33.33%;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.carousel .carousel-mid .carousel-items .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */
