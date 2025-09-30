@@ -33,93 +33,93 @@
 
 
 //categ-page
-// const mid = document.createElement("div");
-// const categ = document.createElement("div");
-// const popular = document.createElement("section");
+const mid = document.createElement("div");
+const categ = document.createElement("div");
+const popular = document.createElement("section");
 
 
-// mid.classList.add("categ-mid");
-// categ.classList.add("categ");
-// popular.classList.add("popular", "container");
+mid.classList.add("categ-mid");
+categ.classList.add("categ");
+popular.classList.add("popular", "container");
 
 
-// const boxes = [
-// [
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//   {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-// ],
-//  [
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//   {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-//     {
-//     img: "./images/fruit.png",
-//     text: "Fresh Fruit"
-//   },
-// ] 
-// ];
-// boxes.forEach(group=>{
-//   const row = document.createElement("div");
-//   row.classList.add("categ-top");
-//   group.forEach(item=>{
-//     const img = document.createElement("img");
-//     const text = document.createElement("h5");
-//     const box = document.createElement("div");
-//     img.src=item.img;
-//     text.innerHTML=item.text;
-//     box.append(img, text);
-//     box.classList.add("categ-box");
-//       row.appendChild(box);
-//   })
-// mid.appendChild(row);
-// });
+const boxes = [
+[
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+  {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+],
+ [
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+  {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+    {
+    img: "./images/fruit.png",
+    text: "Fresh Fruit"
+  },
+] 
+];
+boxes.forEach(group=>{
+  const row = document.createElement("div");
+  row.classList.add("categ-top");
+  group.forEach(item=>{
+    const img = document.createElement("img");
+    const text = document.createElement("h5");
+    const box = document.createElement("div");
+    img.src=item.img;
+    text.innerHTML=item.text;
+    box.append(img, text);
+    box.classList.add("categ-box");
+      row.appendChild(box);
+  })
+mid.appendChild(row);
+});
 
-// categ.appendChild(mid);
-// popular.appendChild(categ);
-// document.body.appendChild(popular);
+categ.appendChild(mid);
+popular.appendChild(categ);
+document.body.appendChild(popular);
 
 
 
-//popular-product-page
+// popular-product-page
 
 // const products = [
 //   [
@@ -128,7 +128,7 @@
 //       name: "chineese cabbage",
 //       price: "$12.00",
 //       stars: 
-//     },
+//     }
 //   ]
 // ]
 
